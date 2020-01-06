@@ -25,6 +25,7 @@ import Nav from "./Nav";
 import TitleBanner from "./TitleBanner";
 import MenuBar from "./MenuBar";
 import Footer from "./Footer";
+import HomePage from "./HomePage";
 
 
 const App = (props) => (
@@ -68,7 +69,7 @@ const App = (props) => (
               <Route path="/confirmation" component={ConfirmationPage} />
               <Route path="/search" component={ProductsSearch} />
               <Route exact path="/upload" component={Upload} />
-              <Route exact path="/" component={ProductsIndex} />
+              <Route exact path="/" component={HomePage} />
             </Switch>
           </div>
           <div>
