@@ -13,13 +13,17 @@ export const FETCH_PRODUCTS = gql`
 `;
 
 export const FETCH_PRODUCT = gql`
-  query FetchProduct($id: ID!){
-    product(id: $id){
-      id,
-      name,
-      description,
-      width,
+  query FetchProduct($id: ID!) {
+    product(id: $id) {
+      id
+      name
+      description
+      width
       height
+      category {
+        id
+        name
+      }
     }
   }
 `;

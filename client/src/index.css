@@ -286,6 +286,9 @@ button{
   width: 50px;
   height: 50px;
   animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 600px;
 }
 
 @keyframes spin {
@@ -539,6 +542,17 @@ light-grey{
   min-height: 500px;
 }
 
+.product-breadcrumb{
+  margin-top: 15px;
+}
+
+.product-breadcrumb a{
+  text-decoration: none;
+}
+
+
+
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .wrapped{
@@ -566,5 +580,4 @@ light-grey{
   .search-input{
     width: 78%;
   }
-
 }
